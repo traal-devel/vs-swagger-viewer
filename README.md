@@ -1,8 +1,9 @@
-[![Marketplace Version](https://vsmarketplacebadge.apphb.com/version/Arjun.swagger-viewer.svg "Current Release")](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer) [![Marketplace Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/Arjun.swagger-viewer.svg "Current Release")](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer)
+[![Marketplace Version](https://vsmarketplacebadge.apphb.com/version/Arjun.swagger-viewer.png "Current Release")](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer) [![Marketplace Downloads](https://vsmarketplacebadge.apphb.com/downloads-short/Arjun.swagger-viewer.png "Current Release")](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer)
 
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/arjunganesan)
 
-# Swagger Viewer - v3.0.0
+[![ko-fi](https://storage.ko-fi.com/cdn/cuplogo-sm.png)Support me on Ko-fi (arjunganesan)](https://ko-fi.com/arjunganesan)
+
+# Swagger Viewer - 3.0.2
 **Swagger Viewer lets you preview Swagger 2.0 and OpenAPI files as you type in Visual Studio Code. Additionally provide intellisense/linting for the files as well.**
 
 It works on swagger files in json and yaml format. Preview happens in real time as you type.
@@ -69,6 +70,12 @@ To stop the preview server simply click the status bar item.
 ![Stop Swagger Server](https://cdn.rawgit.com/arjun-g/vs-swagger-viewer/master/docs/stop-swagger-preview-server.png)
 
 ## Releases
+
+**3.0.2 Changes**
+* Upgrade to last version of swagger-ui-dist (=3.34.0) and swagger-parser (=10.0.2),
+  because of problems with dynamic names in query parameters.
+* Fix: Added openapi-types dependency 7.0.1 because of compile errors.
+* Fix: Missing type coercion makes `npm run vscode:prepublish` fail #93
 
 **v3.0.0 Changes**
 * The primary functionality of the Swagger Viewer extension would be the ability to preview Swagger and OpenAPI files.
