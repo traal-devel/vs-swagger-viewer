@@ -7,6 +7,13 @@
 
 It works on swagger files in json and yaml format. Preview happens in real time as you type.
 
+## Create vsix package (vsce)
+```
+npm install vsce
+vsce package
+code --install-extension swagger-viewer-3.0.1-01.vsix
+```
+
 ## Preview
 
 To  start
